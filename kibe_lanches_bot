@@ -13,6 +13,7 @@ def hamburguer(mensagem):
     """
     bot.send_message(mensagem.chat.id, texto)
 
+
 @bot.message_handler(commands=["Salgados"])
 def salada(mensagem):
     bot.send_message(mensagem.chat.id, """
@@ -40,6 +41,7 @@ Para enviar uma reclamação, sugestão ou elogio, mande um e-mail para suporte@
 
 Para começar novamente clique em -> /start
     """)
+
 
 @bot.message_handler(commands=["3"])
 def opcao3(mensagem):
@@ -84,6 +86,7 @@ def pizza(mensagem):
     Insira o endereço:
             """)
 
+
 @bot.message_handler(commands=["Kibe"])
 def pizza(mensagem):
     bot.send_message(mensagem.chat.id, """ 
@@ -97,11 +100,13 @@ def pizza(mensagem):
     Insira o endereço:
             """)
 
+
 @bot.message_handler(commands=["Xburguer"])
 def pizza(mensagem):
     bot.send_message(mensagem.chat.id, """ 
     Insira o endereço:
             """)
+
 
 @bot.message_handler(commands=["Xsalada"])
 def pizza(mensagem):
@@ -109,17 +114,20 @@ def pizza(mensagem):
     Insira o endereço:
             """)
 
+
 @bot.message_handler(commands=["Calabresa"])
 def pizza(mensagem):
     bot.send_message(mensagem.chat.id, """ 
     Insira o endereço:
             """)
 
+
 @bot.message_handler(commands=["Mussarela"])
 def pizza(mensagem):
     bot.send_message(mensagem.chat.id, """ 
     Insira o endereço:
             """)
+
 
 @bot.message_handler(commands=["Portuguesa"])
 def pizza(mensagem):
@@ -144,10 +152,11 @@ Responder qualquer outra coisa não vai funcionar, clique em uma das opções
 @bot.message_handler(commands=["cancelar"])
 def cancelar(mensagem):
     bot.send_message(mensagem.chat.id, """ 
-Seu pedido está sendo preparado, e logo será enviado!
+Seu pedido foi cancelado!
 
 Para começar novamente, clique aqui -> /start
                 """)
+
 
 @bot.message_handler(commands=["Ticket"])
 def ticket(mensagem):
@@ -157,6 +166,7 @@ Seu pedido está sendo preparado, e logo será enviado!
 Para cancelar, clique aqui -> /cancelar
                     """)
 
+
 @bot.message_handler(commands=["Credito"])
 def ticket(mensagem):
     bot.send_message(mensagem.chat.id, """ 
@@ -164,6 +174,7 @@ Seu pedido está sendo preparado, e logo será enviado!
 
 Para cancelar, clique aqui -> /cancelar
                         """)
+
 
 @bot.message_handler(commands=["Debito"])
 def ticket(mensagem):
