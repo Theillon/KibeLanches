@@ -1,0 +1,235 @@
+import telebot
+
+CHAVE_API = "5565456668:AAGpwxW2I-pvPqYFweyjqHIbhvb14em2jfU"
+
+bot = telebot.TeleBot(CHAVE_API)
+
+
+@bot.message_handler(commands=["Instalacao_de_programas"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para lhe atendermos melhor, vamos transferir o seu chamado para um técnico especializado!
+    
+    Por favor, aguarde!
+    
+    Caso queira cancelar o chamado, basta clicar em /cancelar
+    
+            """)
+
+
+@bot.message_handler(commands=["Backup"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para lhe atendermos melhor, vamos transferir o seu chamado para um técnico especializado!
+    
+    Por favor, aguarde!
+    
+    Caso queira cancelar o chamado, basta clicar em /cancelar
+    
+            """)
+
+@bot.message_handler(commands=["Formatacao_do_sistema_operacional"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Instalacao_do_sistema_operacional"])
+def hamburguer(mensagem):
+    texto = """
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+    """
+    bot.send_message(mensagem.chat.id, texto)
+
+
+@bot.message_handler(commands=["Instalacao_atualizacao_formatacao_ou_backup"])
+def salada(mensagem):
+    bot.send_message(mensagem.chat.id, """
+    
+    Selecione uma das opções abaixo:
+    
+    /Instalacao_do_sistema_operacional
+    /Formatacao_do_sistema_operacional 
+    /Instalacao_de_programas
+    /Backup
+    
+    Responder qualquer outra coisa não vai funcionar, clique em uma das opções acima!
+     """)
+
+
+@bot.message_handler(commands=["Loja_de_equipamentos"])
+def opcao1(mensagem):
+    texto = """
+Acesse nossa loja no mercado livre abaixo:
+
+https://loja.mercadolivre.com.br/kibeinformatica
+
+Obrigado, pela preferência!
+    """
+    bot.send_message(mensagem.chat.id, texto)
+
+
+@bot.message_handler(commands=["Reclamacoes_ou_sugestoes"])
+def opcao2(mensagem):
+    bot.send_message(mensagem.chat.id, """
+Para enviar uma reclamação, sugestão ou elogio, mande um e-mail para suporte@kibeinformatica.com
+
+Para começar novamente clique em -> /start
+    """)
+
+
+@bot.message_handler(commands=["Conheca_nossas_unidades"])
+def opcao3(mensagem):
+    bot.send_message(mensagem.chat.id, """Nossas unidades:
+
+Kibe Informática – Praça da Árvore
+Rua Itapiru, 338 - Vila da Saúde, São Paulo – SP
+Telefone: (11)5575-2246
+
+Kibe Informática – Vila Mariana
+Rua Leandro Dupret, 643 – Vila Clementino – SP
+Telefone: (11)6434-7264
+
+Kibe Informática – Jabaquara
+Rua Parnaíba Paolielo, 388 – Jardim Oriental – SP 
+Telefone: (11)2115-8593
+
+Para começar novamente clique em -> /start
+""")
+
+
+@bot.message_handler(commands=["Atendimento_tecnico"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+Ótimo, qual seria o seu caso: (Clique no item):
+
+/Computador_com_defeito 
+/Limpeza_no_computador 
+/Instalacao_atualizacao_formatacao_ou_backup
+
+Responder qualquer outra coisa não vai funcionar, clique em uma das opções acima!
+    """)
+
+
+@bot.message_handler(commands=["Computador_com_defeito"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+Ok, selecione a opção que descreva seu problema:
+    
+/Computador_nao_liga
+/Computador_esquentando
+/Computador_lento
+/Outros
+
+Responder qualquer outra coisa não vai funcionar, clique em uma das opções acima!
+        """)
+
+
+@bot.message_handler(commands=["Outros"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Computador_lento"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Computador_esquentando"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Computador_nao_liga"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Computador_com_defeito"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Limpeza_no_computador"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["Instalacao/atualizacao_de_software"])
+def pizza(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+    Para averiguar mais detalhadamente a situação, enviaremos um técnico para a sua empresa/residência
+    
+    Por favor, insira o endereço:
+            """)
+
+
+@bot.message_handler(commands=["start"])
+def responder(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+Bem vindo ao atendimento da Kibe Informática. Como podemos te ajudar? (Clique no item):
+
+/Atendimento_tecnico
+/Loja_de_equipamentos
+/Conheca_nossas_unidades
+/Reclamacoes_ou_sugestoes
+
+Responder qualquer outra coisa não vai funcionar, clique em uma das opções acima!
+                """)
+
+
+@bot.message_handler(commands=["cancelar"])
+def cancelar(mensagem):
+    bot.send_message(mensagem.chat.id, """ 
+Seu chamado foi cancelado!
+
+Para começar novamente, clique aqui -> /start
+                """)
+
+
+def verificar(mensagem):
+    return True
+
+
+@bot.message_handler(func=verificar)
+def responder(mensagem):
+    texto8 = """
+Certo, dentro de 4 horas o técnico estará no local.
+
+Obrigado pela confiança!
+
+Caso queira cancelar o chamado, basta clicar em /cancelar
+    """
+    bot.reply_to(mensagem, texto8)
+
+
+bot.polling()
